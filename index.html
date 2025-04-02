@@ -1,16 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Tropicália</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+    <header class=" p-5">
+
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/1743015941985.png" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul> 
+            <div id="acessebilidade" class="menu-acessibilidade">
+                <button class="btn btn-primary fw-bold" id="aumentar-fonte">
+                    A+
+                </button>
+                <button class="btn btn-primary fw-bold" id="diminuir-fonte">
+                    A-
+                </button>
+            </div>
+        </nav>
+       
+    </header>
+
+
+    <main class="container my-5">
+
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Boas-vindas a</h1>
+                    <img src="img/1743015899567.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#tropicalia"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
+                <img src="https://static.wixstatic.com/media/d5463c_9a9b0533f585470aa5397d7b6d3a0f29~mv2.png/v1/fill/w_530,h_426,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d5463c_9a9b0533f585470aa5397d7b6d3a0f29~mv2.png" class="img-fluid img-inicio"> 
+
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                  <div class="col-5">
+                    <h2>O que foi o Hard Rock?</h2>
+                    <p class="p-2">O Hard Rock surgiu no final dos anos 1960, evoluindo a partir do blues rock e do rock psicodélico. Caracteriza-se por guitarras distorcidas, riffs pesados e vocais fortes, com bandas como Led Zeppelin e AC/DC sendo grandes representantes. Nos anos 2000, a cantora Pitty trouxe elementos do Hard Rock para a música brasileira, ganhando destaque com um som que mistura o estilo com influências do rock alternativo. O gênero continuou a crescer nos anos 1970 e a influenciar diversos estilos musicais, incluindo o Heavy Metal, e mantém uma base de fãs fiel até hoje.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Apresenta%C3%A7%C3%A3o_da_banda_Pitty_na_ExpoTrade_2011_em_Pira%C3%AD_do_Sul_Cropped.jpg/640px-Apresenta%C3%A7%C3%A3o_da_banda_Pitty_na_ExpoTrade_2011_em_Pira%C3%AD_do_Sul_Cropped.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Band_Tidal_Flow.jpg/640px-Band_Tidal_Flow.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/13/00/18/rock-3079352_960_720.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://cdn.pixabay.com/photo/2017/09/06/21/23/music-2723091_1280.jpg" class="img-fluid rounded-5"
+                            loading="lazy">
+                        <div class="col-md-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Pitty_cropped_01.jpg" class="img-fluid rounded-5"
+                                loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
+                                placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="text-center p-3 fst-italic">
+        <p>Acesse nossas redes:</p>
+        <i class="bi bi-whatsapp"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
